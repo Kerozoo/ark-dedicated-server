@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    command: /home/steam/ark-dedicated/ShooterGame/Binaries/Linux/ShooterGameServer $MAP_NAME?listen?SessionName=$SERVER_NAME?ServerPassword=$JOIN_PASSWORD?ServerAdminPassword=$ADMIN_PASSWORD -server -log
+    volumes:
+      - ./Saved:/home/steam/ark-dedicated/ShooterGame/Saved
+    ports:
+      - "27015:27015"
+      - "27015:27015/udp"
+      - "7777:7777"
+      - "7777:7777/udp"
+      - "7778:7778"
+      - "7778:7778/udp"
+    tty: true
+    stdin_open: true
+    environment: 
+      MAP_NAME: TheIsland
+      SERVER_NAME: server_name
+      JOIN_PASSWORD: join_password
+      ADMIN_PASSWORD: admin_password

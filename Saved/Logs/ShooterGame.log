@@ -1,0 +1,13 @@
+﻿[2021.06.21-18.04.29:892][  0]Log file open, 06/21/21 18:04:29
+[2021.06.21-18.04.29:892][  0]ARK Version: 331.1
+[2021.06.21-18.04.29:892][  0]PID: 1
+[2021.06.21-18.05.06:154][  0]Primal Game Data Took 33.84 seconds
+[2021.06.21-18.05.08:482][  0]SteamSocketsOpenSource: gethostname failed ()
+[2021.06.21-18.05.08:482][  0]gethostbyname failed ()
+[2021.06.21-18.05.19:924][  0]Server Initializing with BattlEye Anti-Cheat Protection. If you do not wish to use BattlEye, please launch with -NoBattlEye
+[2021.06.21-18.05.21:146][  0]BattlEye successfully started.
+[2021.06.21-18.05.21:185][  0]Server: "ARK #563165" has successfully started!
+[2021.06.21-18.05.21:205][  0]ADayCycleManager DayCycleManager3, 
+[2021.06.21-18.05.23:762][  0]Commandline:  TheIsland?listen?SessionName=?ServerPassword=?ServerAdminPassword= -server -log
+[2021.06.21-18.05.23:762][  0]Full Startup: 55.73 seconds (BP compile: 0.00 seconds)
+[2021.06.21-18.05.23:762][  0]Number of cores 6
