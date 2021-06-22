@@ -1,7 +1,7 @@
 services:
   app:
     build: .
-    command: /home/steam/ark-dedicated/ShooterGame/Binaries/Linux/ShooterGameServer $MAP_NAME?listen?SessionName=$SERVER_NAME?ServerPassword=$JOIN_PASSWORD?ServerAdminPassword=$ADMIN_PASSWORD -server -log
+    command: sh /home/steam/ark-dedicated/exec.sh
     volumes:
       - ./Saved:/home/steam/ark-dedicated/ShooterGame/Saved
     ports:

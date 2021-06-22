@@ -1,0 +1,2 @@
+#! /bin/bash
+/home/steam/ark-dedicated/ShooterGame/Binaries/Linux/ShooterGameServer ${MAP_NAME}?listen?SessionName=${SERVER_NAME}?ServerPassword=${JOIN_PASSWORD}?ServerAdminPassword=${ADMIN_PASSWORD} -server -log
