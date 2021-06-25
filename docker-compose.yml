@@ -4,6 +4,7 @@ services:
     command: sh /home/steam/ark-dedicated/exec.sh
     volumes:
       - ./Saved:/home/steam/ark-dedicated/ShooterGame/Saved
+      - ./exec.sh:/home/steam/ark-dedicated/exec.sh
     ports:
       - "27015:27015"
       - "27015:27015/udp"

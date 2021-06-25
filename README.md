@@ -28,8 +28,23 @@ docker-compose up
 
 ## Additional ark settings
 
-- Edit the following file (`Saved` directory will be created after started ark server)
+- Edit the exec.sh for additional settings. For example, PVE server enabled
 
+```diff
+- /home/steam/ark-dedicated/ShooterGame/Binaries/Linux/ShooterGameServer ${MAP_NAME}?listen?SessionName=${SERVER_NAME}?ServerPassword=${JOIN_PASSWORD}?ServerAdminPassword=${ADMIN_PASSWORD} -server -log
++ /home/steam/ark-dedicated/ShooterGame/Binaries/Linux/ShooterGameServer ${MAP_NAME}?listen?SessionName=${SERVER_NAME}?ServerPassword=${JOIN_PASSWORD}?ServerAdminPassword=${ADMIN_PASSWORD}?serverPVE=True -server -log
 ```
-Saved\Config\LinuxServer\GameUserSettings.ini
-```
+
+- Restart server
+
+  - Stop the container
+    ```
+    Control + V
+        or
+    docker-compose stop
+    ```
+
+  - Start the container
+    ```
+    docker-compose up
+    ```
