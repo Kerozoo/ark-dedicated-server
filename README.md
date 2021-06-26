@@ -39,7 +39,7 @@ docker-compose up
 
   - Stop the container
     ```
-    Control + V
+    Control + C
         or
     docker-compose stop
     ```
